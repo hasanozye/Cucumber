@@ -13,3 +13,11 @@ Feature: matematik islemleri
     When  kullanici 10 eklediginde
     And   kullanici 2 cikardiginda
     Then  sonuc 10 olmalidir
+
+    Scenario: toplama ve cikarma genel
+      Given baslangic sayisi 1 olsun
+      When kullanici 6 eklediginde
+      And kullanici 5 eklediginde
+      And kullanici 2 cikardiginda
+      And kullanici 10 cikardiginda
+      Then  sonuc 0 olmalidir
