@@ -12,6 +12,7 @@ public class SenaryoIslemleriStepDef {
     @Given("baslangic sayisi {int} olsun")
     public void baslangicSayisiOlsun(int basSayi) {
         sayi = basSayi;
+        System.out.println("sayi initalize edildi = " + basSayi);
 
     }
 
