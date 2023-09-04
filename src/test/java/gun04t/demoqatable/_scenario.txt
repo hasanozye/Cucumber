@@ -1,0 +1,29 @@
+
+1.  https://demoqa.com   sayfasina gidin
+2.  Elements'e tiklayin
+3.  WebTables'a tiklayin
+
+4.  acilan sayfadaki tabloya 5 adet kayit girin
+
+
+
+Scenario
+1.  http://opencart.abstracta.us/  gidin
+2.  login olun
+
+Senario outline
+3.  mac aratin MacBook'u cart a ekleyin
+    iPhone aratin iPhone'u cart a ekleyin
+    Samsung aratin Samsung SyncMaster yi cart'a ekleyin
+
+    Example:
+    | searchTerm | product      |
+    | mac        | MacBook      |
+    | mac        | MacBook Pro  |
+    | iPhone     | iPhone       |
+    | Samsung    | Samsung SyncMaster |
+
+
+
+
+

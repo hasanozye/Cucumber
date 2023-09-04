@@ -1,0 +1,7 @@
+
+
+    Given user on page "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+    When user fill the login form as follows
+    |username| admin|
+    |password| admin123|
+    Then login should be successful
