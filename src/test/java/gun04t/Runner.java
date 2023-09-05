@@ -5,8 +5,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = {"src/test/java/gun04t/demoqatable/DemoQATable.feature"},
-        glue = {"gun04t/demoqatable"}
+        features = {"src/test/java/gun04t/opencart/Opencart.feature"},
+        glue = {"gun04t/opencart"}
 )
 public class Runner extends AbstractTestNGCucumberTests {
 }
