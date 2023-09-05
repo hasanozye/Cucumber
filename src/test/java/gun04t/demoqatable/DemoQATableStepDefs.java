@@ -66,10 +66,9 @@ public class DemoQATableStepDefs {
     @When("kullanici formu asagidaki bilgilerle doldurdugunda")
     public void kullaniciFormuAsagidakiBilgilerleDoldurdugunda(DataTable table) {
 
-        List<WebElement> delButtons = driver.findElements(lDelButtons);
-        countOfDataFirst = delButtons.size();
+        countOfDataFirst = driver.findElements(lDelButtons).size();
 
-        Map<String, String> maps = table.asMap(); 
+        Map<String, String> maps = table.asMap();
         click(lAddNewBtn);
         sendKeys(lFirstName, maps.get("FirstName"));
         sendKeys(lLastName, maps.get("LastName"));
@@ -79,22 +78,15 @@ public class DemoQATableStepDefs {
         sendKeys(lDepartment, maps.get("Department"));
         click(lSubmitBtn);
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
-        List<WebElement> delButtonsAfter = driver.findElements(lDelButtons);
-        countOfDataAfter = delButtonsAfter.size();
-        Assert.assertTrue(countOfDataFirst < countOfDataAfter);
 
 
     }
 
     @Then("kayit eklenmis olmali")
     public void kayitEklenmisOlmali() {
-
+        countOfDataAfter = driver.findElements(lDelButtons).size();
+        Assert.assertTrue(countOfDataFirst < countOfDataAfter);
     }
 
     public void click(By locator) {
