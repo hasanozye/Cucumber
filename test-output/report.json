@@ -1,0 +1,119 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-09-05T19:55:19.425Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gun05t.Hooks.before2()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gun05t.Hooks.before1()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "scenario 1",
+        "description": "",
+        "id": "feature-1;scenario-1",
+        "after": [
+          {
+            "result": {
+              "duration": 1998200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gun05t.Hooks.after1(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7994900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user multiply 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 14
+                }
+              ],
+              "location": "gun05t.Gun05StepDefs.userMultiply(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [2] but found [1]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:839)\r\n\tat org.testng.Assert.assertEquals(Assert.java:849)\r\n\tat gun05t.Gun05StepDefs.userDivide(Gun05StepDefs.java:17)\r\n\tat ✽.user divide 2(file:///C:/Users/PC/IdeaProjects/Cucumber/src/test/java/gun05t/gun05.feature:7)\r\n",
+              "duration": 4997000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user divide 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 12
+                }
+              ],
+              "location": "gun05t.Gun05StepDefs.userDivide(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "result is \"two\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"two\"",
+                  "offset": 10
+                }
+              ],
+              "location": "gun05t.Gun05StepDefs.resultIs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@A"
+          },
+          {
+            "name": "@B"
+          }
+        ]
+      }
+    ],
+    "name": "feature 1",
+    "description": "",
+    "id": "feature-1",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/gun05t/gun05.feature",
+    "tags": []
+  }
+]
